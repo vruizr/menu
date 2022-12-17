@@ -1,3 +1,4 @@
+<body>
 <script>
         
 let pizza = 0;
@@ -21,5 +22,8 @@ botones.forEachi(boton => {
 })
 
 </script>
+
+</body>
+
 
 
