@@ -106,23 +106,23 @@
         </script>
 
         <div class="container">
-            <h2>Nuggets $3.0</h2>
-            <button id="BotonDisminuirNuggets" class="boton disminuir Nuggets">Disminuir</button>
-            <span id="areaContadorNuggets">0</span>
-            <button id="BotonAumentarNuggets" class="boton aumentar Nuggets">Aumentar</button>
+            <h2>Hotdog $2.5</h2>
+            <button id="BotonDisminuirHotdog" class="boton disminuir Hotdog">Disminuir</button>
+            <span id="areaContadorHotdog">0</span>
+            <button id="BotonAumentarHotdog" class="boton aumentar Hotdog">Aumentar</button>
         </div>
         <script type="text/javascript">
-            var BotonDisminuirNuggets = document.getElementById("BotonDisminuirNuggets");
-            var BotonAumentarNuggets = document.getElementById("BotonAumentarNuggets");
-            var areaContadorNuggets = document.getElementById("areaContadorNuggets");
-            var contadorNuggets = 0;
-            BotonDisminuirNuggets.onclick = function () {
-                contadorNuggets--;
-                areaContadorNuggets.textContent = contadorNuggets;
+            var BotonDisminuirHotdog = document.getElementById("BotonDisminuirHotdog");
+            var BotonAumentarHotdog = document.getElementById("BotonAumentarHotdog");
+            var areaContadorHotdog = document.getElementById("areaContadorHotdog");
+            var contadorHotdog = 0;
+            BotonDisminuirHotdog.onclick = function () {
+                contadorHotdog--;
+                areaContadorHotdog.textContent = contadorHotdog;
             }
-            BotonAumentarNuggets.onclick = function () {
-                contadorNuggets++;
-                areaContadorNuggets.textContent = contadorNuggets;
+            BotonAumentarHotdog.onclick = function () {
+                contadorHotdog++;
+                areaContadorHotdog.textContent = contadorHotdog;
             }
         </script>
 
