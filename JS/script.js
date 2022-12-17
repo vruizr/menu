@@ -1,3 +1,5 @@
+<script>
+        
 let pizza = 0;
 
 const valor= document.querySelector("#valor");
@@ -17,3 +19,7 @@ botones.forEachi(boton => {
             valor.textContent=pizza;
     }]
 })
+
+</script>
+
+
