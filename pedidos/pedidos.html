@@ -9,6 +9,18 @@
                 font-family: impact;
                 margin: 10px;
             }
+            #areaContadorDrink {
+                font-size: 40px;
+                font-weight: bold;
+                font-family: impact;
+                margin: 10px;
+            }
+            #areaContadorHotdog {
+                font-size: 40px;
+                font-weight: bold;
+                font-family: impact;
+                margin: 10px;
+            }
         </style>
     </head>
     <body>
@@ -48,14 +60,14 @@
             var BotonDisminuirDrink = document.getElementById("BotonDisminuirDrink");
             var BotonAumentarDrink = document.getElementById("BotonAumentarDrink");
             var areaContadorDrink = document.getElementById("areaContadorDrink");
-            var contador = 0;
+            var contadordrink = 0;
             BotonDisminuirDrink.onclick = function () {
-                contador--;
-                areaContadorDrink.textContent = contador;
+                contadordrink--;
+                areaContadorDrink.textContent = contadordrink;
             }
             BotonAumentarDrink.onclick = function () {
-                contador++;
-                areaContadorDrink.textContent = contador;
+                contadordrink++;
+                areaContadorDrink.textContent = contadordrink;
             }
         </script>
         
@@ -70,14 +82,14 @@
             var BotonDisminuirHotdog = document.getElementById("BotonDisminuirHotdog");
             var BotonAumentarHotdog = document.getElementById("BotonAumentarHotdog");
             var areaContadorHotdog = document.getElementById("areaContadorHotdog");
-            var contador = 0;
+            var contadorhotdog = 0;
             BotonDisminuirHotdog.onclick = function () {
-                contador--;
-                areaContadorHotdog.textContent = contador;
+                contadorhotdog--;
+                areaContadorHotdog.textContent = contadorhotdog;
             }
             BotonAumentarHotdog.onclick = function () {
-                contador++;
-                areaContadorHotdog.textContent = contador;
+                contadorhotdog++;
+                areaContadorHotdog.textContent = contadorhotdog;
             }
         </script>
 
