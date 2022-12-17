@@ -1,19 +1,46 @@
 <html>
-  <head>
-    <title>Pedidos</title>
-  </head>
-  <body>
-    <div>
-      <h1>Pedidos</h1>
-    </div>
-    <div class="container">
-          <h1>Pizza</h1>
-          <button class="boton disminuir">Disminuir</button>
-          <span id="valor">0</span>
-          <button class="boton aumentar">Aumentar</button>
-    </div>
-    <div>
-      <a href="../index.html">Regresar</a>
-    </div>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Pedidos</title>
+        <style type="text/css">
+            #areaContador {
+                font-size: 40px;
+                font-weight: bold;
+                font-family: impact;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Pedidos</h1>
+        </div>
+
+        <div class="container">
+            <h1>Pizza</h1>
+            <button id="BotonDisminuir" class="boton disminuir">Disminuir</button>
+            <span id="areaContador">0</span>
+            <button id="BotonAumentar" class="boton aumentar">Aumentar</button>
+        </div>
+
+        <script type="text/javascript">
+            var BotonDisminuir = document.getElementById("BotonDisminuir");
+            var BotonAumentar = document.getElementById("BotonAumentar");
+            var areaContador = document.getElementById("areaContador");
+            var contador = 0;
+            BotonDisminuir.onclick = function () {
+                contador--;
+                areaContador.textContent = contador;
+            }
+            BotonAumentar.onclick = function () {
+                contador++;
+                areaContador.textContent = contador;
+            }
+        </script>
+
+        <div>
+            <a href="../index.html">Regresar</a>
+        </div>
+        
+    </body>
 </html>
