@@ -27,14 +27,14 @@
             var BotonDisminuir = document.getElementById("BotonDisminuir");
             var BotonAumentar = document.getElementById("BotonAumentar");
             var areaContador = document.getElementById("areaContador");
-            var contador = 0;
+            var contadorPizza = 0;
             BotonDisminuir.onclick = function () {
-                contador=contador-3;
-                areaContador.textContent = contador;
+                contadorPizza=contadorPizza--;
+                areaContador.textContent = contadorPizza;
             }
             BotonAumentar.onclick = function () {
-                contador=contador+3;
-                areaContador.textContent = contador;
+                contadorPizza=contadorPizza++;
+                areaContador.textContent = contadorPizza;
             }
         </script>
 
