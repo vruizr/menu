@@ -19,22 +19,22 @@
         <div class="container">
             <h1>Pizza</h1>
             <button id="BotonDisminuir" class="boton disminuir">Disminuir</button>
-            <span id="areaContadorPizza">0</span>
+            <span id="areaContador">0</span>
             <button id="BotonAumentar" class="boton aumentar">Aumentar</button>
         </div>
 
         <script type="text/javascript">
             var BotonDisminuir = document.getElementById("BotonDisminuir");
             var BotonAumentar = document.getElementById("BotonAumentar");
-            var areaContadorPizza = document.getElementById("areaContadorPizza");
+            var areaContador = document.getElementById("areaContador");
             var contadorPizza = 0;
             BotonDisminuir.onclick = function () {
                 contadorPizza=contadorPizza--;
-                areaContadorPizza.textContent = contadorPizza;
+                areaContador.textContent = contadorPizza;
             }
             BotonAumentar.onclick = function () {
                 contadorPizza=contadorPizza++;
-                areaContadorPizza.textContent = contadorPizza;
+                areaContador.textContent = contadorPizza;
             }
         </script>
 
