@@ -62,13 +62,13 @@
                     contadorSandwich--;
                 areaContadorSandwich.textContent = contadorSandwich;
                 var data = document.getElementById("areaContadorTotal")
-                data.textContent = contadorSandwich*2.5;
+                data.textContent = contadorSandwich*2.5 + contadorDrink*1.5;
             }
             BotonAumentarSandwich.onclick = function () {
                     contadorSandwich++;
                 areaContadorSandwich.textContent = contadorSandwich;
                 var data = document.getElementById("areaContadorTotal")
-                data.textContent = contadorSandwich*2.5;
+                data.textContent = contadorSandwich*2.5 + contadorDrink*1.5;
             }
         </script>
         
@@ -83,14 +83,19 @@
             var BotonDisminuirDrink = document.getElementById("BotonDisminuirDrink");
             var BotonAumentarDrink = document.getElementById("BotonAumentarDrink");
             var areaContadorDrink = document.getElementById("areaContadorDrink");
-            var contadordrink = 0;
+            var contadorDrink = 0;
             BotonDisminuirDrink.onclick = function () {
-                contadordrink--;
-                areaContadorDrink.textContent = contadordrink;
+                if(contadorDrink>0)
+                    contadorDrink--;
+                areaContadorDrink.textContent = contadorDrink;
+                var data = document.getElementById("areaContadorTotal")
+                data.textContent = contadorSandwich*2.5 + contadorDrink*1.5;
             }
             BotonAumentarDrink.onclick = function () {
-                contadordrink++;
-                areaContadorDrink.textContent = contadordrink;
+                    contadorDrink++;
+                areaContadorDrink.textContent = contadorDrink;
+                var data = document.getElementById("areaContadorTotal")
+                data.textContent = contadorSandwich*2.5 + contadorDrink*1.5;
             }
         </script>
         
