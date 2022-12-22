@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <title>Pedidos</title>
         <style type="text/css">
-            #areaContador {
+            #areaContadorSandwich {
                 font-size: 40px;
                 font-weight: bold;
                 font-family: impact;
@@ -48,22 +48,27 @@
 
         <div class="container">
             <h2>Sandwich $2.5</h2>
-            <button id="BotonDisminuir" class="boton disminuir">Disminuir</button>
-            <span id="areaContador">0</span>
-            <button id="BotonAumentar" class="boton aumentar">Aumentar</button>
+            <button id="BotonDisminuirSandwich" class="boton disminuir Sandwich">Disminuir</button>
+            <span id="areaContadorSandwich">0</span>
+            <button id="BotonAumentarSandwich" class="boton aumentar Sandwich">Aumentar</button>
         </div>
         <script type="text/javascript">
-            var BotonDisminuir = document.getElementById("BotonDisminuir");
-            var BotonAumentar = document.getElementById("BotonAumentar");
-            var areaContador = document.getElementById("areaContador");
-            var contador = 0;
-            BotonDisminuir.onclick = function () {
-                contador--;
-                areaContador.textContent = contador;
+            var BotonDisminuirSandwich = document.getElementById("BotonDisminuirSandwich");
+            var BotonAumentarSandwich = document.getElementById("BotonAumentarSandwich");
+            var areaContadorSandwich = document.getElementById("areaContadorSandwich");
+            var contadorSandwich = 0;
+            BotonDisminuirSandwich.onclick = function () {
+                if(contadorSandwich>0)
+                    contadorSandwich--;
+                areaContadorSandwich.textContent = contadorSandwich;
+                var data = document.getElementById("areaContadorTotal")
+                data.textContent = contadorSandwich*2.5;
             }
-            BotonAumentar.onclick = function () {
-                contador++;
-                areaContador.textContent = contador;
+            BotonAumentarSandwich.onclick = function () {
+                    contadorSandwich++;
+                areaContadorSandwich.textContent = contadorSandwich;
+                var data = document.getElementById("areaContadorTotal")
+                data.textContent = contadorSandwich*2.5;
             }
         </script>
         
