@@ -43,6 +43,7 @@
     </head>
 
     <body>
+
         <div id="pedidos">
             <div>
                 <center>
@@ -102,7 +103,7 @@
         <div id="total" style="display:none;">
             <div class="container">
                 <h2>TOTAL</h2>
-                <span id="areaContadorTotal">0</span>
+                <span id="areaContadorTotal2">0</span>
             </div>
 
             <div id="cabecera">
@@ -148,12 +149,16 @@
                 areaContadorSandwich.textContent = contadorSandwich;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
             BotonAumentarSandwich.onclick = function () {
                     contadorSandwich++;
                 areaContadorSandwich.textContent = contadorSandwich;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
         </script>
         <script type="text/javascript">
@@ -167,12 +172,16 @@
                 areaContadorDrink.textContent = contadorDrink;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
             BotonAumentarDrink.onclick = function () {
                     contadorDrink++;
                 areaContadorDrink.textContent = contadorDrink;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
         </script>
         <script type="text/javascript">
@@ -186,6 +195,8 @@
                 areaContadorNuggets.textContent = contadorNuggets;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
             BotonAumentarNuggets.onclick = function () {
                     contadorNuggets++;
@@ -205,6 +216,8 @@
                 areaContadorHotdog.textContent = contadorHotdog;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
 
             }
             BotonAumentarHotdog.onclick = function () {
@@ -212,6 +225,8 @@
                 areaContadorHotdog.textContent = contadorHotdog;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
         </script>
         <script type="text/javascript">
@@ -225,20 +240,28 @@
                 areaContadorCoffee.textContent = contadorCoffee;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
             BotonAumentarCoffee.onclick = function () {
                 contadorCoffee++;
                 areaContadorCoffee.textContent = contadorCoffee;
                 var data = document.getElementById("areaContadorTotal")
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
+                var data2 = document.getElementById("areaContadorTotal2")
+                data2.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
         </script>
         <script type="text/javascript">
             var areaContadorTotal = document.getElementById("areaContadorTotal");
             var contadorTotal = 0;
+            var areaContadorTotal2 = document.getElementById("areaContadorTotal2");
+            var contadorTotal2 = 0;
  
             contadorTotal=totalsandwich+totaldrink+totalhotdog;     
             areaContadorTotal.textContent = contadorTotal;
+            contadorTotal2=totalsandwich+totaldrink+totalhotdog;     
+            areaContadorTotal2.textContent = contadorTotal2;
         </script>
 
     </body>
