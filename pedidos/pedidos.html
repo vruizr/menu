@@ -41,6 +41,7 @@
             }
         </style>
     </head>
+
     <body>
         <div>
             <center>
@@ -134,6 +135,60 @@
             <span id="areaContadorHotdog">0</span>
             <button id="BotonAumentarHotdog" class="boton aumentar Hotdog">Aumentar</button>
         </div>
+
+        <div class="container">
+            <h2>Coffee $1.5</h2>
+            <button id="BotonDisminuirCoffee" class="boton disminuir Coffee">Disminuir</button>
+            <span id="areaContadorCoffee">0</span>
+            <button id="BotonAumentarCoffee" class="boton aumentar Coffee">Aumentar</button>
+        </div>
+
+        <div id="navegacion"> 
+            <center>
+                <a href="../index.html"><h1>REGRESAR A MENU</h1></a>
+                <br>
+                <div id="boton" onclick="mostrarOcultar()"><h1>ACEPTAR</h1></div>
+            </center>
+        </div>
+
+        <div id="total">
+            <div class="container">
+                <h2>TOTAL</h2>
+                <span id="areaContadorTotal">0</span>
+            </div>
+
+            <div id="cabecera">
+                <center>
+                    <h1>Si tu pedido es correcto CONFIRMA por favor.</h1>
+                </center>
+            </div>
+
+            <div class="container">
+                <h2>TOTAL</h2> contadorTotal;
+                <div class="container">
+                    <h2>CONFIRMAR</h2>
+                </div>
+                <div id="navegacion"> 
+                    <center>
+                        <div><a href="pedidos.html"><h2>CAMBIAR ORDEN</h2></a></div>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var clic = 1;
+            function mostrarOcultar(){
+                if(clic==1){
+                    document.getElementById("total").style.height = "100px";
+                    clic = clic + 1;
+                } else{
+                    document.getElementById("total").style.height = "0px";      
+                    clic = 1;
+                }   
+            }
+        </script>
+
         <script type="text/javascript">
             var BotonDisminuirHotdog = document.getElementById("BotonDisminuirHotdog");
             var BotonAumentarHotdog = document.getElementById("BotonAumentarHotdog");
@@ -155,12 +210,6 @@
             }
         </script>
 
-        <div class="container">
-            <h2>Coffee $1.5</h2>
-            <button id="BotonDisminuirCoffee" class="boton disminuir Coffee">Disminuir</button>
-            <span id="areaContadorCoffee">0</span>
-        <button id="BotonAumentarCoffee" class="boton aumentar Coffee">Aumentar</button>
-        </div>
         <script type="text/javascript">
             var BotonDisminuirCoffee = document.getElementById("BotonDisminuirCoffee");
             var BotonAumentarCoffee = document.getElementById("BotonAumentarCoffee");
@@ -181,29 +230,13 @@
             }
         </script>
 
-        <div class="container">
-            <h2>TOTAL</h2>
-            <span id="areaContadorTotal">0</span>
-        </div>
-
         <script type="text/javascript">
- 
             var areaContadorTotal = document.getElementById("areaContadorTotal");
             var contadorTotal = 0;
  
             contadorTotal=totalsandwich+totaldrink+totalhotdog;     
             areaContadorTotal.textContent = contadorTotal;
- 
- 
         </script>
 
-        <div id="navegacion"> 
-            <center>
-                <a href="../index.html"><h1>REGRESAR A MENU</h1></a>
-                <br>
-                <div><a href="confirmar.html"><h1>ACEPTAR</h1></a></div>
-            </center>
-        </div>
-        
     </body>
 </html>
