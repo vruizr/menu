@@ -39,30 +39,8 @@
                 font-family: impact;
                 margin: 10px;
             }
-            #boton{
-                padding: 10px;
-                background: orange;
-                width: 95px;
-                cursor: pointer;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                box-shadow: 0px 0px 1px #000;
-                display: inline-block;
-            }
-            #boton:hover{
-                opacity: .8;
-            }
-            #total{
-                width: 100%;
-                margin: auto;
-                height: 0px;
-                background: #000;
-                box-shadow: 10px 10px 3px #D8D8D8;
-                transition: height .4s;
-            }
         </style>
     </head>
-
     <body>
         <div>
             <center>
@@ -130,66 +108,6 @@
             <span id="areaContadorNuggets">0</span>
             <button id="BotonAumentarNuggets" class="boton aumentar Nuggets">Aumentar</button>
         </div>
-
-        <div class="container">
-            <h2>Hotdog $2.5</h2>
-            <button id="BotonDisminuirHotdog" class="boton disminuir Hotdog">Disminuir</button>
-            <span id="areaContadorHotdog">0</span>
-            <button id="BotonAumentarHotdog" class="boton aumentar Hotdog">Aumentar</button>
-        </div>
-
-        <div class="container">
-            <h2>Coffee $1.5</h2>
-            <button id="BotonDisminuirCoffee" class="boton disminuir Coffee">Disminuir</button>
-            <span id="areaContadorCoffee">0</span>
-            <button id="BotonAumentarCoffee" class="boton aumentar Coffee">Aumentar</button>
-        </div>
-
-        <div id="navegacion"> 
-            <center>
-                <a href="../index.html"><h1>REGRESAR A MENU</h1></a>
-                <br>
-                <div id="boton" onclick="mostrarOcultar()"><h1>ACEPTAR</h1></div>
-            </center>
-        </div>
-
-        <div id="total">
-            <div class="container">
-                <h2>TOTAL</h2>
-                <span id="areaContadorTotal">0</span>
-            </div>
-
-            <div id="cabecera">
-                <center>
-                    <h1>Si tu pedido es correcto CONFIRMA por favor.</h1>
-                </center>
-            </div>
-
-            <div class="container">
-                <h2>TOTAL</h2> contadorTotal;
-                <div class="container">
-                    <h2>CONFIRMAR</h2>
-                </div>
-                <div id="navegacion"> 
-                    <center>
-                        <div><a href="pedidos.html"><h2>CAMBIAR ORDEN</h2></a></div>
-                    </center>
-                </div>
-            </div>
-        </div>
-
-        <script type="text/javascript">
-            var clic = 1;
-            function mostrarOcultar(){
-                if(clic==1){
-                    document.getElementById("total").style.height = "100px";
-                    clic = clic + 1;
-                } else{
-                    document.getElementById("total").style.height = "0px";      
-                    clic = 1;
-                }   
-            }
-        </script>
         <script type="text/javascript">
             var BotonDisminuirNuggets = document.getElementById("BotonDisminuirNuggets");
             var BotonAumentarNuggets = document.getElementById("BotonAumentarNuggets");
@@ -209,6 +127,13 @@
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
         </script>
+
+        <div class="container">
+            <h2>Hotdog $2.5</h2>
+            <button id="BotonDisminuirHotdog" class="boton disminuir Hotdog">Disminuir</button>
+            <span id="areaContadorHotdog">0</span>
+            <button id="BotonAumentarHotdog" class="boton aumentar Hotdog">Aumentar</button>
+        </div>
         <script type="text/javascript">
             var BotonDisminuirHotdog = document.getElementById("BotonDisminuirHotdog");
             var BotonAumentarHotdog = document.getElementById("BotonAumentarHotdog");
@@ -229,6 +154,13 @@
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
         </script>
+
+        <div class="container">
+            <h2>Coffee $1.5</h2>
+            <button id="BotonDisminuirCoffee" class="boton disminuir Coffee">Disminuir</button>
+            <span id="areaContadorCoffee">0</span>
+        <button id="BotonAumentarCoffee" class="boton aumentar Coffee">Aumentar</button>
+        </div>
         <script type="text/javascript">
             var BotonDisminuirCoffee = document.getElementById("BotonDisminuirCoffee");
             var BotonAumentarCoffee = document.getElementById("BotonAumentarCoffee");
@@ -248,6 +180,7 @@
                 data.textContent = contadorSandwich*2.5 + contadorDrink*1.5 + contadorNuggets*3 + contadorHotdog*2.5 + contadorCoffee*1.5;
             }
         </script>
+
         <script type="text/javascript">
             var areaContadorTotal = document.getElementById("areaContadorTotal");
             var contadorTotal = 0;
@@ -256,5 +189,13 @@
             areaContadorTotal.textContent = contadorTotal;
         </script>
 
+        <div id="navegacion"> 
+            <center>
+                <a href="../index.html"><h1>REGRESAR A MENU</h1></a>
+                <br>
+                <div><a href="confirmar.html"><h1>ACEPTAR</h1></a></div>
+            </center>
+        </div>
+        
     </body>
 </html>
