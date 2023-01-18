@@ -16,9 +16,10 @@ $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
 $para = 'ssjgoku.v@gmail.com';
-$asunto = 'Mensaje de cliente';
+$asunto = 'Pedido de cliente';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
 header("Location:../index.html");
+exit();
 ?>
