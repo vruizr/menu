@@ -15,11 +15,11 @@ $message .= "Teléfono de contacto: " . $phone . " \r\n";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'vicnba_01@hotmail.com';
+$para = 'ssjgoku.v@gmail.com';
 $asunto = 'Pedido de cliente';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:../index.html");
+header("Location:pedidos.html");
 exit();
 ?>
