@@ -20,6 +20,6 @@ $asunto = 'Pedido de cliente';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:pedidos.html");
+header("Location:/pedidos.html");
 exit();
 ?>
