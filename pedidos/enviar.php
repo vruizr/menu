@@ -24,5 +24,4 @@ mail('ssjgoku.v@gmail.com', 'Mi título', $mensaje);
 //mail($para, $asunto, utf8_decode($message), $header);
 
 header("Location:/pedidos.html");
-exit();
 ?>
