@@ -18,7 +18,10 @@ $message .= "Enviado el: " . date('d/m/Y', time());
 $para = 'ssjgoku.v@gmail.com';
 $asunto = 'Pedido de cliente';
 
-mail($para, $asunto, utf8_decode($message), $header);
+$mensaje = "prueba de mensaje";
+mail('ssjgoku.v@gmail.com', 'Mi título', $mensaje);
+
+//mail($para, $asunto, utf8_decode($message), $header);
 
 header("Location:/pedidos.html");
 exit();
