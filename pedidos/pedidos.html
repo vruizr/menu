@@ -175,8 +175,9 @@
         </div>
 
         <script type="text/javascript">
+            if(contadorTotal>0){
             function mostrarOcultar(){
-                if(contadorTotal2>0)
+                
                 var cuadroTotal = document.getElementById("total");
                 var cuadroPedido = document.getElementById("pedidos");
                 if (cuadroTotal.style.display === "none") {
@@ -188,7 +189,7 @@
                 }
                 
             }
- 
+                }
         </script>
         <script type="text/javascript">
             var BotonDisminuirSandwich = document.getElementById("BotonDisminuirSandwich");
